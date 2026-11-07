@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drena's Treats and Sweets | Homebaked Goodies in White Bear Lake, MN</title>
+<title>Drena's Sweets and Treats | Homebaked Goodies in White Bear Lake, MN</title>
 <meta name="description" content="All things sweet and delicious. Homebaked treats from White Bear Lake, MN: dipped Oreos, cookies, toffee, donuts and more. Send an order request today.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -39,9 +41,13 @@
 
   /* Header */
   header { background: var(--white); border-bottom: 1px solid #eadff7; position: sticky; top: 0; z-index: 10; }
-  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 20px; }
   .brand { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1.3rem; color: var(--cocoa); text-decoration: none; }
   .brand span { color: var(--pink); }
+  .brand { display: inline-flex; align-items: center; gap: 10px; }
+  .brand-mark { width: 44px; height: 44px; border-radius: 50%; }
+  .hero-logo { display: flex; justify-content: center; }
+  .hero-logo img { width: 100%; max-width: 430px; height: auto; filter: drop-shadow(0 10px 24px rgba(21,17,28,.18)); }
   nav ul { list-style: none; display: flex; gap: 22px; align-items: center; }
   nav a { text-decoration: none; color: var(--cocoa-soft); font-weight: 600; font-size: 0.95rem; }
   nav a:hover { color: var(--purple); }
@@ -119,8 +125,10 @@
     .hero { padding: 36px 0 44px; }
     .steps { grid-template-columns: 1fr; }
     section { padding: 48px 0; }
-    .hero-photos { order: -1; }
+    .hero-logo { order: -1; }
+    .hero-logo img { max-width: 320px; }
   }
+  @media (max-width: 520px) { .brand { font-size: 1rem; white-space: nowrap; gap: 8px; } .brand-mark { width: 38px; height: 38px; } .nav { gap: 8px; } .nav .btn { padding: 8px 14px; font-size: 0.85rem; white-space: nowrap; } }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
 </head>
@@ -128,7 +136,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top">Drena's <span>Treats</span> &amp; Sweets</a>
+    <a class="brand" href="#top"><img class="brand-mark" src="images/logo-mark.png" alt="" width="44" height="44">Drena's <span>Sweets</span> &amp; Treats</a>
     <nav aria-label="Main">
       <ul>
         <li><a href="#menu">Treats</a></li>
@@ -152,10 +160,8 @@
           <a class="btn btn-outline" href="#menu">See the treats</a>
         </div>
       </div>
-      <div class="hero-photos">
-        <img class="tall" src="images/chocolate-oreos.jpg" alt="Milk chocolate covered Oreos topped with chocolate chips" width="837" height="829">
-        <img class="sq" src="images/cookies.jpg" alt="Soft cookies topped with cereal squares" width="415" height="697">
-        <img class="sq" src="images/dipped-cookies.jpg" alt="Cookies dipped in white chocolate with heart sprinkles" width="421" height="610">
+      <div class="hero-logo">
+        <img src="images/logo.png" alt="Drena's Sweets and Treats logo: a smiling baker in a pink apron holding a bag of treats in a pastel kitchen" width="717" height="960">
       </div>
     </div>
   </div>
@@ -238,7 +244,7 @@
       <img src="images/holiday-oreos.jpg" alt="Holiday treats baked at home" loading="lazy">
       <div>
         <h2>Baked with love</h2>
-        <p>Drena's Treats and Sweets is a home bakery in White Bear Lake, Minnesota. Every treat is made by hand, one small batch at a time, with real ingredients and a lot of care.</p>
+        <p>Drena's Sweets and Treats is a home bakery in White Bear Lake, Minnesota. Every treat is made by hand, one small batch at a time, with real ingredients and a lot of care.</p>
         <p>Whether it's a birthday, a holiday gift box or a sweet treat just because, we'd love to bake something for you.</p>
         <a class="btn" href="#order">Order something sweet</a>
       </div>
@@ -248,11 +254,11 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top">Drena's Treats &amp; Sweets</a>
+    <a class="brand" href="#top">Drena's Sweets &amp; Treats</a>
     <p>White Bear Lake, MN &middot; <a href="https://www.facebook.com/profile.php?id=100087473604020" target="_blank" rel="noopener noreferrer">Find us on Facebook</a></p>
     <!-- ADD MDA COTTAGE FOOD REGISTRATION NUMBER HERE once she is registered -->
     <p class="small">These products are homemade and not subject to state inspection.</p>
-    <p class="small">&copy; 2026 Drena's Treats and Sweets. Website by <a href="https://amber-empowered.com" target="_blank" rel="noopener noreferrer">AE9 Labs</a>.</p>
+    <p class="small">&copy; 2026 Drena's Sweets and Treats. Website by <a href="https://amber-empowered.com" target="_blank" rel="noopener noreferrer">AE9 Labs</a>.</p>
   </div>
 </footer>
 
